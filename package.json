@@ -1,0 +1,23 @@
+{
+  "name": "cdadevops",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Brief devOps",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheerinbanu/cdaDevOps.git"
+  },
+  "author": "Sheerin Banu Paris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheerinbanu/cdaDevOps/issues"
+  },
+  "homepage": "https://github.com/sheerinbanu/cdaDevOps#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
