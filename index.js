@@ -5,11 +5,11 @@ import homepageRouter from "./routes/homepageRoutes.js";
 
 dotenv.config();
 connectDB();
+
 const __dirname = path.resolve();
 
 // Create express App
 const app = express();
-
 // Set views engine
 app.set("view engine", "ejs");
 
