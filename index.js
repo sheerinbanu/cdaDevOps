@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 
 // Create express App
 const app = express();
-app.use(connectDB);
+connectDB();
 
 // Set views engine
 app.set("view engine", "ejs");
@@ -22,6 +22,4 @@ app.use(homepageRouter);
 /*app.get("/", (req, res) => {
   res.send("Hello, world!");
 });*/
-app.listen(8082, () => {
-  console.log("listening on port 8082");
-});
+app.listen(8082, () => {});
