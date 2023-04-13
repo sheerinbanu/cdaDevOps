@@ -1,9 +1,11 @@
 import Category from "../models/Category.js";
 
 // Get All Categories
-export const getCategories = (req, res, next) => {
+export const getCategories = async (req, res, next) => {
+  const categories = await Category.find();
   res.render("category/getCategories", {
     title: "CategoryList",
+    categories: categories,
   });
 };
 
