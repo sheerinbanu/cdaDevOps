@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/connectDB.js";
 import homepageRouter from "./routes/homepageRoutes.js";
 import categoryRouter from "./routes/categoryRoutes.js";
+import productRouter from "./routes/productRoutes.js";
 
 // Configure dotenv
 dotenv.config();
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Use routers
 app.use(homepageRouter);
 app.use(categoryRouter);
+app.use(productRouter);
 
 // Create server and Listenning
 app.listen(8082, () => {
